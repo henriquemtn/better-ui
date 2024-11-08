@@ -1,7 +1,7 @@
 export default function GithubSocial() {
     return (
       <a
-        href="https://github.com/markmead/hyperui"
+        href="https://github.com/henriquemtn/bunnieui"
         rel="noreferrer"
         target="_blank"
         className="inline-flex items-center gap-2 text-gray-900 hover:opacity-75"
