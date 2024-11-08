@@ -1,7 +1,7 @@
 export default function GithubSocial() {
     return (
       <a
-        href="https://github.com/henriquemtn/bunnieui"
+        href="https://github.com/henriquemtn/bunnie-ui"
         rel="noreferrer"
         target="_blank"
         className="inline-flex items-center gap-2 text-gray-900 hover:opacity-75"
