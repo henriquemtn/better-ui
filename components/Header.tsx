@@ -22,15 +22,15 @@ export default function Header() {
   const menuLinks = [
     {
       title: 'Components',
-      href: '/components/application-ui',
+      href: '/components/',
     },
     {
       title: 'Templates',
-      href: '/components/marketing',
+      href: '/templates/',
     },
     {
-      title: 'Blog',
-      href: '/blog',
+      title: 'Playground',
+      href: '/playground/',
     },
   ]
 
@@ -38,16 +38,16 @@ export default function Header() {
     <header className="sticky inset-x-0 top-0 z-50 border-b border-gray-200 bg-white">
       <Announcement />
       <Container classNames="relative flex h-16 items-center justify-between gap-4 sm:gap-8">
-        <div className="flex items-center gap-4">
+        <div className="flex w-full items-center gap-4">
           <BrandLogo />
-
-          <HeaderMenuLinks menuLinks={menuLinks} navClass="hidden md:block" ulClass="gap-4 flex" />
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-2 sm:gap-4">
+        <div className="flex w-full items-center justify-center gap-4">
+          <HeaderMenuLinks menuLinks={menuLinks} navClass="hidden md:block" ulClass="space-x-4 flex" />
+        </div>
 
+        <div className="flex items-center w-full justify-end gap-2 sm:gap-4">
           <GithubSocial />
-
           <HeaderMenu showMenu={showMenu} handleSetShowMenu={setShowMenu} menuLinks={menuLinks} />
         </div>
       </Container>
