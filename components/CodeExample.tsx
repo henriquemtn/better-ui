@@ -19,19 +19,19 @@ export default function CodeExample({ code, htmlCode, language = "jsx" }: CodeEx
   };
 
   return (
-    <div className="relative p-4 border rounded-md text-white">
+    <div className="relative pt-4 text-white">
       <div className="flex gap-2 mb-4">
+        <button
+          onClick={() => setShowCode(!showCode)}
+          className="bg-blue-500 text-white px-2 py-1 rounded text-sm hover:bg-blue-600"
+        >
+          {showCode ? "👀 Ver Componentes" : "👀 Ver Código"}
+        </button>
         <button
           onClick={() => setIsJsx(!isJsx)}
           className="bg-blue-500 text-white px-2 py-1 rounded text-sm hover:bg-blue-600"
         >
           {isJsx ? "Ver HTML" : "Ver JSX"}
-        </button>
-        <button
-          onClick={() => setShowCode(!showCode)}
-          className="bg-blue-500 text-white px-2 py-1 rounded text-sm hover:bg-blue-600"
-        >
-          {showCode ? "Ver Componentes" : "Ver Código"}
         </button>
         <button
           onClick={handleCopy}
