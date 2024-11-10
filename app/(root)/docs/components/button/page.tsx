@@ -12,7 +12,8 @@ export default function ApplicationUiPage() {
   ];
 
   const componentsItems = [
-    { name: 'Button', link: '/docs/components/button' },
+    { name: 'Button', link: '/docs/components/button', isActived: true },
+    { name: 'Card', link: '/docs/components/card' },
   ];
 
   const sampleJsxCode = `
@@ -44,7 +45,7 @@ const sampleHtmlCode = `
         </div>
         <Viewer>
           <h1>Button Components</h1>
-          <CodeExample htmlCode={sampleHtmlCode} code={sampleJsxCode} />
+            <CodeExample htmlCode={sampleHtmlCode} code={sampleJsxCode} />
         </Viewer>
       </div>
     </div>
