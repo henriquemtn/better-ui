@@ -4,11 +4,7 @@ export default function BrandLogo({ fontSize = 'text-sm' }) {
     return (
         <Link href="/">
             <div className={`inline-flex gap-1.5 ${fontSize}`}>
-                <span className="text-base font-medium text-gray-800">BunnieUI</span>
-
-                <span aria-hidden="true" role="img">
-                    ✨
-                </span>
+                <span className="text-xl font-medium text-gray-800">Bunnie UI</span>
             </div>
         </Link>
     )

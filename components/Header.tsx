@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 
 import { usePathname } from 'next/navigation'
 
-
 import GithubSocial from './GithubSocial'
 import HeaderMenu from './HeaderMenu'
 import HeaderMenuLinks from './HeaderMenuLinks'
@@ -22,7 +21,7 @@ export default function Header() {
   const menuLinks = [
     {
       title: 'Components',
-      href: '/components/',
+      href: '/component/',
     },
     {
       title: 'Templates',

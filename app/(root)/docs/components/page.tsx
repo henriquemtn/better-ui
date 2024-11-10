@@ -1,4 +1,5 @@
 import VerticalMenu from '@/components/VerticalMenu';
+import Viewer from '@/components/Viewer';
 import React from 'react';
 
 export default function ApplicationUiPage() {
@@ -17,9 +18,12 @@ export default function ApplicationUiPage() {
 
   return (
     <div className='mx-auto max-w-7xl'>
-      <div className='flex flex-col pt-4 md:max-w-[300px]'>
-        <VerticalMenu title='Getting Started' item={introductionItems} />
-        <VerticalMenu title='Marketing UI' item={marketingItems} />
+      <div className='flex flex-row p-4 w-full'>
+        <div className='flex flex-col w-[300px] pr-4'>
+          <VerticalMenu title='Getting Started' item={introductionItems} />
+          <VerticalMenu title='Marketing UI' item={marketingItems} />
+        </div>
+          <Viewer />
       </div>
     </div>
   );
