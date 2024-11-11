@@ -20,7 +20,7 @@ export default function HeaderMenuLinks({ menuLinks, navClass = '', ulClass = ''
             <li key={href}>
               <Link
                 href={href}
-                className="inline-flex items-center gap-1 text-sm font-medium text-gray-800 hover:opacity-75"
+                className="inline-flex items-center gap-1 text-sm font-medium text-gray-800 dark:text-white hover:opacity-75"
               >
                 {title}
               </Link>

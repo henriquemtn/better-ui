@@ -18,7 +18,7 @@ const navSections: NavSection[] = [
   {
     title: 'Getting Started',
     items: [
-      { name: 'Introduction', href: '/components' },
+      { name: 'Introduction', href: '/components/introduction' },
     ]
   },
   {
@@ -68,24 +68,12 @@ export default function Sidenav({ activePath }: { activePath: string }) {
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
-    <aside className="relative w-full">
-      <div className="fixed inset-x-0 w-full h-full bg-white px-4 border-r border-gray-200 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0">
-        <div className="pr-4 pt-10 pb-2">
-          <div className="relative">
-            <Search className="w-5 h-5 absolute left-3 inset-y-0 my-auto text-gray-400" />
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="px-3 py-2 bg-gray-100 hover:bg-gray-200 focus:bg-white text-sm text-gray-700 placeholder-gray-500 outline-none border focus:border-blue-500 shadow-sm rounded-lg duration-200 w-full pl-12 border-gray-300"
-            />
-          </div>
-        </div>
+    <aside className="relative  ">
+      <div className="fixed inset-x-0 w-full h-full  px-4 border-r border-gray-200 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0">
         <nav className="h-full overflow-y-auto pb-[17rem] text-gray-600 text-sm pt-4 pr-4 [&>*]:pt-6 xl:pb-60">
           {navSections.map((section, index) => (
             <div key={index} className="">
-              <h3 className="pb-6 font-medium text-gray-900">{section.title}</h3>
+              <h3 className="pb-3 text-sm font-semibold text-gray-800 dark:text-neutral-200">{section.title}</h3>
               <ul className="relative after:absolute after:top-0 after:left-3 after:w-px after:h-full after:bg-gray-200">
                 {section.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
@@ -93,7 +81,7 @@ export default function Sidenav({ activePath }: { activePath: string }) {
                       href={item.href}
                       className={`block relative z-10 rounded-lg px-3 py-2 transition-colors duration-150 group hover:bg-gray-100 hover:text-gray-900 ${
                         activePath === item.href
-                          ? 'bg-gray-100 text-gray-900 font-medium'
+                          ? 'bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-medium'
                           : ''
                       }`}
                     >

@@ -31,7 +31,7 @@ export default function SectionHeaders() {
         {components.map((component, index) => (
           <div key={index}>
             <div className="items-start justify-between sm:flex">
-              <h3 className="text-sm text-gray-600 font-medium py-4">{component.name}</h3>
+              <h3 className="text-base text-gray-600 font-medium py-4">{component.name}</h3>
               <div className="flex gap-3 items-center my-3 sm:mt-0">
                 <div className="text-sm">
                   <button
