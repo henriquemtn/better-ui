@@ -36,7 +36,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 border-b border-gray-200 bg-white dark:bg-black">
+    <header className="sticky inset-x-0 top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black">
       <Announcement />
       <Container classNames="relative flex h-16 items-center justify-between gap-4 sm:gap-8">
         <div className="flex items-center gap-4">

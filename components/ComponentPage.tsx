@@ -48,7 +48,7 @@ export default function ComponentPage({ components }: ComponentPageProps) {
                                 <div className="text-sm">
                                     <button
                                         onClick={() => toggleCode(index)}
-                                        className="px-4 py-2 flex items-center gap-x-2 text-sm text-black hover:bg-gray-300 border rounded-lg shadow-sm transition duration-150"
+                                        className="px-4 py-2 flex items-center gap-x-2 text-sm text-black dark:text-white hover:bg-gray-100 hover:dark:bg-gray-900 hover:dark-bg-gray-800 border rounded-lg shadow-sm transition duration-150"
                                     >
                                         {openCode === index ? 'Hide' : 'Show'} Code
                                         <Code className="w-5 h-5" />
@@ -56,7 +56,7 @@ export default function ComponentPage({ components }: ComponentPageProps) {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full overflow-hidden border border-gray-200 rounded-lg">
+                        <div className="w-full overflow-hidden border border-gray-200 dark:border-gray-800 rounded-lg">
                             {openCode !== index && (
                                 <PreviewIframe
                                     showPreview={true}
@@ -73,7 +73,7 @@ export default function ComponentPage({ components }: ComponentPageProps) {
                                     <PreviewCode showPreview={openCode !== index} componentCode={component.code} codeType='jsx' />
                                     <button
                                         onClick={() => copyCode(component.code, index)}
-                                        className="absolute top-2 right-2 p-2 bg-white rounded-md shadow-sm hover:bg-gray-100 transition duration-150"
+                                        className="absolute top-2 right-2 p-2 bg-white dark:bg-gray-900 text-black dark:text-white hover:bg-gray-100 hover:dark:bg-gray-800 rounded-md shadow-sm transition duration-150"
                                     >
                                         {copiedIndex === index ? (
                                             <Check className="w-5 h-5 text-green-500" />

@@ -37,8 +37,8 @@ const navSections: NavSection[] = [
 export default function Sidenav({ activePath }: { activePath: string }) {
   return (
     <aside className="relative hidden lg:block">
-      <div className="fixed inset-x-0 w-full h-full  px-4 border-r border-gray-200 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0">
-        <nav className="h-full overflow-y-auto pb-[17rem] text-gray-600 text-sm pt-4 pr-4 [&>*]:pt-6 xl:pb-60">
+      <div className="fixed inset-x-0 w-full h-full  px-4 border-r border-gray-200 dark:border-gray-800 xl:inset-x-[unset] xl:block xl:max-w-[16rem] xl:top-auto xl:px-0">
+        <nav className="h-full overflow-y-auto pb-[17rem] text-gray-600 dark:text-gray-400 text-sm pt-4 pr-4 [&>*]:pt-6 xl:pb-60">
           {navSections.map((section, index) => (
             <div key={index} className="">
               <h3 className="pb-3 text-sm font-semibold text-gray-800 dark:text-neutral-200">{section.title}</h3>
@@ -47,7 +47,7 @@ export default function Sidenav({ activePath }: { activePath: string }) {
                   <li key={itemIndex}>
                     <Link
                       href={item.href}
-                      className={`block relative z-10 rounded-lg px-3 py-2 transition-colors duration-150 group hover:bg-gray-100 hover:text-gray-900 ${
+                      className={`block relative z-10 rounded-lg px-3 py-2 transition-colors duration-150 group hover:bg-gray-100 hover:dark:bg-gray-900 hover:dark:text-gray-100 hover:text-gray-900 ${
                         activePath === item.href
                           ? 'bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-medium'
                           : ''
