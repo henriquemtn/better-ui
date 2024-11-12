@@ -34,8 +34,8 @@ export default function ComponentPage({ components }: ComponentPageProps) {
     return (
         <div className="max-w-7xl mx-auto overflow-hidden mb-12 xl:px-8 pt-2">
             <div>
-                <h1 className="text-3xl font-bold text-gray-900">Tailwind CSS Announcements</h1>
-                <p className="mt-3 text-gray-600">
+                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Tailwind CSS Announcements</h1>
+                <p className="mt-3 text-gray-600 dark:text-gray-200">
                     Beautifully designed, fully responsive, expertly crafted announcements examples
                 </p>
             </div>
@@ -43,7 +43,7 @@ export default function ComponentPage({ components }: ComponentPageProps) {
                 {components.map((component, index) => (
                     <div key={index}>
                         <div className="items-start justify-between sm:flex">
-                            <h3 className="text-base text-gray-600 font-medium py-4">{component.name}</h3>
+                            <h3 className="text-base text-gray-600 dark:text-gray-200 font-medium py-4">{component.name}</h3>
                             <div className="flex gap-3 items-center my-3 sm:mt-0">
                                 <div className="text-sm">
                                     <button
