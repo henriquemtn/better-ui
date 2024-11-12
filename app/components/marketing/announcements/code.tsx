@@ -5,7 +5,7 @@ const announcementsCode = [
         `
             <div class="bg-indigo-600 px-4 py-3 text-white">
                 <p class="text-center text-sm font-medium">
-                    Love Bunnie UI?
+                    Love Better UI?
                     <a href="#" class="inline-block underline ml-1">Check out this new component!</a>
                 </p>
             </div>

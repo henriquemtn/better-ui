@@ -19,7 +19,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Free Tailwind CSS components | BunnieUI",
+  title: "Free Tailwind CSS components | BetterUI",
   description: "Free Tailwind CSS components that can be used in your next project.",
 };
 

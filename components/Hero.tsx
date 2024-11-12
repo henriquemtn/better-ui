@@ -16,7 +16,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl text-gray-600 dark:text-white sm:text-base/relaxed">
-                        BunnieUI is a collection of free Tailwind CSS components that can be used in your next project. With a range of components, you can build your next marketing website, admin dashboard, eCommerce store and much more.
+                        BetterUI is a collection of free Tailwind CSS components that can be used in your next project. With a range of components, you can build your next marketing website, admin dashboard, eCommerce store and much more.
                     </p>
 
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
