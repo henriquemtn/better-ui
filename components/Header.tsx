@@ -27,12 +27,12 @@ export default function Header() {
     },  
     {
       title: 'Templates',
-      href: '/components/marketing',
+      href: '/templates',
     },
     {
-      title: 'Blog',
-      href: '/blog',
-    },
+      title: 'Releases',
+      href: '/releases',
+    },  
   ]
 
   return (

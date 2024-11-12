@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+
+import '@/styles/prism.css'
+import '@/styles/globals.css'
+
 import localFont from "next/font/local";
-import "./globals.css";
 import Header from "@/components/Header";
 import { Providers } from "@/providers/ThemeProvider";
 
