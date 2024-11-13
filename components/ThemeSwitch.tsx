@@ -25,11 +25,19 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <Sun onClick={() => setTheme('light')} />
+    return (
+      <div className='cursor-pointer group flex max-w-[2.25rem] border border-gray-200/40 dark:border-gray-700/40 bg-gray-100/20 dark:bg-gray-800/20 rounded-lg h-9 w-9 items-center justify-center'>
+        <Sun className='w-5 h-5 duration-300 dark:inline-block group-hover:rotate-180' onClick={() => setTheme('light')} />
+      </div>
+    )
   }
 
   if (resolvedTheme === 'light') {
-    return <Moon onClick={() => setTheme('dark')} />
+    return (
+      <div className='cursor-pointer group flex max-w-[2.25rem] border border-gray-200/40 dark:border-gray-700/40 bg-gray-100/20 dark:bg-gray-800/20 rounded-lg h-9 w-9 items-center justify-center'>
+       <Moon className='w-5 h-5 duration-300 dark:inline-block group-hover:rotate-[360deg]' onClick={() => setTheme('dark')} />
+      </div>
+    )
   }
 
 }

@@ -24,7 +24,7 @@ export default function Header() {
     {
       title: 'Components',
       href: '/components/',
-    },  
+    },
     {
       title: 'Templates',
       href: '/templates',
@@ -32,7 +32,7 @@ export default function Header() {
     {
       title: 'Releases',
       href: '/releases',
-    },  
+    },
   ]
 
   return (
@@ -41,14 +41,12 @@ export default function Header() {
       <Container classNames="relative flex h-16 items-center justify-between gap-4 sm:gap-8">
         <div className="flex items-center gap-4">
           <BrandLogo />
-
-          <HeaderMenuLinks menuLinks={menuLinks} navClass="hidden md:block" ulClass="gap-4 flex" />
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-2 sm:gap-4">
-          <ThemeSwitch />
+        <div className="flex flex-1 items-center justify-end gap-2 sm:gap-x-8">
+          <HeaderMenuLinks menuLinks={menuLinks} navClass="hidden md:block" ulClass="gap-8 flex" />
 
-          <GithubSocial />
+          <ThemeSwitch />
 
           <HeaderMenu showMenu={showMenu} handleSetShowMenu={setShowMenu} menuLinks={menuLinks} />
         </div>
