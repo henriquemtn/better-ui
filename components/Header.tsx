@@ -4,8 +4,6 @@ import { useEffect, useState } from 'react'
 
 import { usePathname } from 'next/navigation'
 
-
-import GithubSocial from './GithubSocial'
 import HeaderMenu from './HeaderMenu'
 import HeaderMenuLinks from './HeaderMenuLinks'
 import Container from './Container'
