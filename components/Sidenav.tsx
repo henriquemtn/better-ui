@@ -29,6 +29,7 @@ const navSections: NavSection[] = [
   {
     title: 'Application UI',
     items: [
+      { name: 'Buttons', href: '/components/application-ui/buttons' },
       { name: 'Section Headers', href: '/components/application-ui/section-headers' },
     ]
   },

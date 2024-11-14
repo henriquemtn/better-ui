@@ -13,9 +13,10 @@ interface Component {
 
 interface ComponentPageProps {
     components: Component[]
+    title: string
 }
 
-export default function ComponentPage({ components }: ComponentPageProps) {
+export default function ComponentPage({ components, title }: ComponentPageProps) {
     const [openCode, setOpenCode] = useState<number | null>(null)
     const refIframe = useRef<HTMLIFrameElement>(null)
     const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
@@ -34,9 +35,9 @@ export default function ComponentPage({ components }: ComponentPageProps) {
     return (
         <div className="max-w-7xl mx-auto overflow-hidden mb-12 xl:px-8 pt-2">
             <div>
-                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Tailwind CSS Announcements</h1>
+                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Tailwind CSS {title}</h1>
                 <p className="mt-3 text-gray-600 dark:text-gray-200">
-                    Beautifully designed, fully responsive, expertly crafted announcements examples
+                    Beautifully designed, fully responsive, expertly crafted {title} examples
                 </p>
             </div>
             <div className="mt-12 space-y-12">
